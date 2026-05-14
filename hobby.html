@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panji Portfolio | Hobby</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+<nav class="relative z-30 px-6 md:px-12 lg:px-20 py-7 flex items-center justify-between">
+  <a href="index.html" class="flex items-center gap-3">
+    <img src="assets/logo.png" alt="Panji logo" class="w-12 h-auto object-contain" />
+  </a>
+  <div class="hidden md:flex gap-5 text-2xl">
+    <a href="index.html" class="nav-link ">Home</a>
+    <a href="hobby.html" class="nav-link active">Hobby</a>
+    <a href="gallery.html" class="nav-link ">Gallery</a>
+  </div>
+  <button id="menuToggle" class="md:hidden text-4xl leading-none" aria-label="Open menu">☰</button>
+  <div id="mobileMenu" class="mobile-menu absolute top-20 left-6 right-6 bg-[#e7ebf3]/95 backdrop-blur rounded-2xl shadow-lg md:hidden">
+    <div class="flex flex-col p-5 gap-3 text-2xl text-center">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="hobby.html" class="nav-link active">Hobby</a>
+      <a href="gallery.html" class="nav-link ">Gallery</a>
+    </div>
+  </div>
+</nav>
+<main class="relative min-h-screen overflow-hidden px-6 md:px-12 lg:px-20 pb-20">
+  <span class="blob blob-one left-[-110px] top-[190px]"></span>
+  <span class="blob blob-two right-[-80px] top-[520px]"></span>
+  <span class="blob blob-two left-[-70px] bottom-[10px]"></span>
+
+  <section class="relative z-10 pt-14 md:pt-24">
+    <h1 class="section-title text-center font-bold mb-10 reveal opacity-0 translate-y-8 transition-all duration-700">My Hobbys</h1>
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center reveal opacity-0 translate-y-8 transition-all duration-700">
+      <img src="assets/sport.png" alt="Peralatan olahraga" class="photo-card w-full max-w-[320px] mx-auto aspect-[4/5]" />
+      <p class="text-body">Selain aktivitas akademik, saya juga memiliki beberapa hobi yang membantu saya menjaga keseimbangan antara produktivitas dan waktu untuk diri sendiri. Saya sangat menikmati olahraga, karena bagi saya olahraga bukan hanya tentang menjaga kesehatan fisik, tetapi juga membantu meningkatkan fokus, disiplin, dan energi dalam menjalani aktivitas sehari-hari. Melalui olahraga, saya belajar untuk tetap konsisten, menjaga pola hidup sehat, dan memiliki semangat yang lebih baik dalam menghadapi berbagai tantangan.</p>
+    </div>
+  </section>
+
+  <section class="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-16 md:mt-20 reveal opacity-0 translate-y-8 transition-all duration-700">
+    <p class="text-body order-2 lg:order-1">Saya juga senang mendengarkan musik, yang sering menjadi teman dalam berbagai aktivitas saya, baik saat bersantai maupun ketika sedang belajar atau mengerjakan proyek. Musik membantu menciptakan suasana yang lebih nyaman, meningkatkan mood, dan sering kali menjadi sumber inspirasi bagi saya.</p>
+    <img src="assets/music-book.png" alt="Musik dan buku" class="photo-card order-1 lg:order-2 w-full max-w-[280px] mx-auto aspect-[4/5]" />
+  </section>
+
+  <section class="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-16 md:mt-20 reveal opacity-0 translate-y-8 transition-all duration-700">
+    <img src="assets/game.png" alt="Game console" class="photo-card w-full max-w-[280px] mx-auto aspect-[4/5]" />
+    <p class="text-body">Selain itu, di waktu luang saya juga menikmati bermain game. Bagi saya, game bukan hanya sekadar hiburan, tetapi juga sarana untuk melatih kemampuan berpikir strategis, mengambil keputusan dengan cepat, serta meningkatkan kemampuan problem solving. Beberapa permainan juga mengajarkan pentingnya kerja sama tim dan komunikasi dalam mencapai tujuan bersama.</p>
+  </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
